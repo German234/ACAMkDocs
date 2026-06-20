@@ -1,0 +1,51 @@
+site_name: Documentación de WikiFan
+site_description: Guía de instalación y uso de la API y el cliente de WikiFan.
+site_author: German David Santos Hernandez
+
+theme:
+  name: material
+  language: es
+  logo: img/logo.png
+  favicon: img/logo.png
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: deep purple
+      accent: amber
+      toggle:
+        icon: material/weather-night
+        name: Cambiar a modo oscuro
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: deep purple
+      accent: amber
+      toggle:
+        icon: material/weather-sunny
+        name: Cambiar a modo claro
+  features:
+    - navigation.tabs
+    - navigation.top
+    - navigation.footer
+    - content.code.copy
+    - content.tabs.link
+
+nav:
+  - Inicio: index.md
+  - Servidor (API): servidor.md
+  - Cliente: cliente.md
+  - Vistas: vistas.md
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - pymdownx.details
+  - pymdownx.superfences
+  - toc:
+      permalink: "#"
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+
+plugins:
+  - search
